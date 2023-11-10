@@ -7,9 +7,7 @@ import "../styles/index.css";
 
 //import your own components
 import Home from "./component/home.jsx";
-import ToDoList from "./component/toDoList.jsx";
-
-
+import Todolist from "./component/todolist.jsx";
 
 //render your react application
-ReactDOM.render(<ToDoList />, document.querySelector("#app"));
+ReactDOM.render(<Todolist />, document.querySelector("#app"));
