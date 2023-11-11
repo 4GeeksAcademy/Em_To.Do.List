@@ -1,17 +1,57 @@
 
 body {
-    background: gray;
+    background: white;
 }
-
+.padre {
+margin-top: 10%;
+}
 .main-input {
     background-color: white;
-    width: 40%;
-    border-radius: 15px;
+    border: none;
+    width: 100%;
 }
-
+h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-style: oblique;
+    text-shadow: 5px 5px 4px gray;
+    color: rosybrown;
+}
+ul {
+    margin-right: 15%;
+    margin-left: 15%;
+    box-shadow: 4px 3px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-left: inherit;
+}
 ul li {
-    border: 1px solid black;
+    border: 0.5px solid gray;
     background-color: white;
-    width: 40%;
-    margin: auto;
+    min-height: 25px;
+    list-style-type: none;
+}
+i {
+    display: end;
+    color: white;
+}
+i:hover{
+    color: gray;
+}
+.footer1{
+    border: 0.5px solid gray;
+    max-height: 25px;
+    text-align: start;
+    padding-left: 2px;
+    font-size: x-small;
+    padding-top: 4px;
+    color: gray;
+}
+.footer2{
+    border: 0.5px solid gray;
+    height: 3px;
+    margin-left: 2px;
+}
+.footer3{
+    border: 0.5px solid gray;
+    height: 3px;
+    margin-left: 3px;
 }
