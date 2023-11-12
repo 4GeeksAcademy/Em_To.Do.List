@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
 const Todolist = () => {
-    const [ userInput, setUserInput ] = useState('');
-    const [tasks, setTasks] = useState([''])
-
-    function validateInput () {
-      if(userInput === "") alert("The input cannot be empty");          
-    }  
-    return (            
-    <div className="padre text-center">
+  let listy = document.querySelector("listItem")
+  const [ userInput, setUserInput ] = useState('');
+  const [tasks, setTasks] = useState([''])
+  
+  function validateInput () {
+    if(userInput === "") alert("The input cannot be empty");  
+  }  
+  return (            
+      <div className="padre text-center">
       <h1>todos</h1>    
         <div className="main-container">              
         <ul>
@@ -25,19 +26,21 @@ const Todolist = () => {
               }
             }}/>                 
           </li>
-          {tasks.map((t, index) => (                  
-            <li className="listItem" key={(Math.random())}>
-              {t} 
+          <div className="listItem">
+            {tasks.map((t, index) => (                  
+              <li key={(Math.random())}>
+              {t}
               <i className="float-end p-1 fas fa-trash-alt"
                 onClick={()=> setTasks(tasks.filter((t, currentIndex) => index != currentIndex)) } />
             </li>))}    
-            <footer className="footer1">
-               <p>Total tasks: ({tasks.length})</p>                              
-            </footer>                                                                         
+          </div>
+          <footer className="footer1">
+            <p>Total tasks: ({tasks.length})</p>                              
+          </footer>                                                                         
             <footer className="footer2">
-            </footer>                                                                         
+          </footer>                                                                         
             <footer className="footer3">
-            </footer>                                                                         
+          </footer>                                                                         
         </ul>
       </div>
     </div>
